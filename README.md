@@ -18,6 +18,9 @@ Exemplo ▼
 format(string, sizeof string, "Data: %s", DateAndTime());
 SCM(playerid, -1, string);
 
+A diferença é grande é importante que vocês leiam o "Leia.txt" todas as informações e
+explicações do include estão lá.
+
 * Leia o arquivo "Leia.txt" lá tem informações sobre o include que te ajudará.
 
 Atenciosamente, Walkerxinho7
