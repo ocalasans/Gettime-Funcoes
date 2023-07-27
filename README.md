@@ -7,7 +7,15 @@ certamente vai usar assim, exemplo logo abaixo.
 Exemplo ▼
 
 new dia, mes, ano, hora, minuto, segundo;
-getdate
+getdate(ano, mes, dia);
+gettime(hora, minuto, segundo);
+
+Agora se você usar o include desenvolvido por mim você podera abreviar isso, exemplo logo a
+baixo.
+
+Exemplo ▼
+
+
 
 * Leia o arquivo "Leia.txt" lá tem informações sobre o include que te ajudará.
 
