@@ -16,7 +16,6 @@ baixo.
 Exemplo ▼
 
 format(string, sizeof string, "Data: %s", DateAndTime());
-
 SCM(playerid, -1, string);
 
 A diferença é grande é importante que vocês leiam o "Leia.txt" todas as informações e
