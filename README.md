@@ -15,7 +15,8 @@ baixo.
 
 Exemplo ▼
 
-
+format(string, sizeof string, "Data: %s", DateAndTime());
+SCM(playerid, -1, string);
 
 * Leia o arquivo "Leia.txt" lá tem informações sobre o include que te ajudará.
 
