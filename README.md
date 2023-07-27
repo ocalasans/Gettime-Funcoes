@@ -1,1 +1,1 @@
-# Abreviacao-gettime-getdate
+# Abreviacao gettime & getdate
