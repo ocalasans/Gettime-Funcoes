@@ -1,0 +1,108 @@
+Olá novamente, bom essa é uma include que abrevia o getdate e o gettime por callback
+você não precisará criar variáveis e nem colocar o gettime ou getdate em algumas coisas
+veja alguns exemplos logo abaixo pra aprender mais sobre a include.
+
+É normal que no seu Gamemode você use o getdate e o gettime como no exemplo abaixo,
+exemplo se você fosse usar ele em um comando, exemplo logo abaixo ▼
+
+CMD:data(playerid, params[])
+{
+    new string[90];
+    new dia, mes, ano, hora, minuto, segundo;
+    getdate(ano, mes, dia);
+    gettime(hora, minuto, segundo);
+    
+    format(string, sizeof string, "Data: %02d/%02d/%04d as %02d:%02d:%02d", dia, mes, ano, hora, minuto, segundo);
+    SendClientMessage(playerid, -1, string);
+}
+
+Mas se você usar o meu include você poderia diminuir tudo isso, exemplo logo abaixo ▼
+
+CMD:data(playerid, params[])
+{
+    new string[90];
+    format(string, sizeof string, "%s", DateAndTime());
+    SendClientMessage(playerid, -1, string);
+}
+
+Olhem a diferença né, mas existem coisas que vocês não poderam utilizar essa include
+por exemplo em salvamentos, exemplo logo abaixo ▼
+
+new exemplo[128];
+DOF2_SetInt(exemplo, "Dia",  JustTheDay());
+DOF2_SetInt(exemplo, "Mes", JustTheMonth());
+DOF2_SetInt(exemplo, "Ano", JustTheYear());
+DOF2_SetInt(exemplo, "Hora", JustHour());
+DOF2_SetInt(exemplo, "Minuto", JustMinute());
+DOF2_SetInt(exemplo, "Segundo", JustSecond());
+
+Infelizmente vocês não iram poder utilizar eles assim só vai poder no getdate e gettime
+padrão ▼
+
+new dia, mes, ano, hora, minuto, segundo;
+getdate(ano, mes, dia);
+gettime(hora, minuto, segundo);
+    
+new exemplo[128];
+DOF2_SetInt(exemplo, "Dia",  dia);
+DOF2_SetInt(exemplo, "Mes", mes);
+DOF2_SetInt(exemplo, "Ano", ano);
+DOF2_SetInt(exemplo, "Hora", hora);
+DOF2_SetInt(exemplo, "Minuto", minuto);
+DOF2_SetInt(exemplo, "Segundo", segundo);
+
+Outra coisa bem parecida que vocês não iram poder usar igual ao salvamento, é a
+variável, vamos dizer que no Gamemode de vocês tem uma enum das infos dos
+jogadores e não precisa do DOF2_SetInt, é so setar na info do player que já salva,
+exemplo logo abaixo ▼
+
+GamerInfo[playerid][gDia] = JustTheDay();
+GamerInfo[playerid][gMes] = JustTheMonth();
+GamerInfo[playerid][gAno] = JustTheYear();
+GamerInfo[playerid][gHora] = JustHour();
+GamerInfo[playerid][gMinuto] = JustMinute();
+GamerInfo[playerid][gSegundo] = JustSecond();
+
+Infelizmente ele segue o mesmo exemplo logo acima, você também iria precisar
+usar o getdate e gettime nesses casos, mas retirando só esses 2 problemas o
+resto você consegue abreviar tudo.
+
+Outra coisa quando vocês forem utilizar a callback lembre-se de por somente
+a %s já que a callback é formatada, deem uma olhada novamente no exemplo
+de comando na linha 8 até a 26.
+
+Irei deixar logo abaixo o nome de todas as callbacks que vocês podem utilizar
+para abreviar e o que elas fazem ▼
+
+
+DateAndTime() Mostra a data e as horas com os segundos.
+
+JustTheDate() Mostra somente a data.
+
+JustTheTime() Mostra somente as horas com os segundos.
+
+DateNoSeconds() Mostra a data e as horas sem os segundos.
+
+DateNoYear() Mostra somente a data sem ano.
+
+TimeNoSeconds() Mostra somente as horas sem os segundos.
+
+JustTheYear() Mostra somente o ano.
+
+JustTheMonth() Mostra somente o mês.
+
+JusthTheDay() Mostra somente o dia.
+
+JustHour() Mostra somente a hora.
+
+JustMinute() Mostra somente os minutos.
+
+JustSecond() Mostra somente os segundos.
+
+
+Em breve trarei mais opções para está include, lembrando eu sou o criador todos
+os créditos são meus e provavelmente está é a primeira include de abreviação do
+getdate e o gettime.
+
+Atenciosamente, Walkerxinho7
+Discord, Walkerxinho7#9124 caso precise de ajuda
