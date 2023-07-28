@@ -6,8 +6,8 @@ vai usar assim, exemplo logo abaixo.
 
 Exemplo ▼
 
-new dia, mes, ano, hora, minuto, segundo;
-getdate(ano, mes, dia);
+new dia, mes, ano, hora, minuto, segundo;                                               
+getdate(ano, mes, dia);                                         
 gettime(hora, minuto, segundo);
 
 Agora se você usar o include desenvolvido por mim você podera abreviar isso, exemplo logo a
