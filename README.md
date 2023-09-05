@@ -10,8 +10,7 @@ new dia, mes, ano, hora, minuto, segundo;
 getdate(ano, mes, dia);                                         
 gettime(hora, minuto, segundo);
 
-format(string, sizeof string, "Data: %02d/%02d/%04d as %02d:%02d:%02d", DateAndTime());
-
+format(string, sizeof string, "Data: %02d/%02d/%04d as %02d:%02d:%02d", dia, mes, ano, hora, minuto, segundo);
 SCM(playerid, -1, string);
 ```
 Agora se você usar o include desenvolvido por mim você podera abreviar isso, exemplo logo a
