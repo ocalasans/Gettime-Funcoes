@@ -5,19 +5,23 @@ precisar usar uma variável pra definir o gettime & getdate, se você usar a var
 vai usar assim, exemplo logo abaixo.
 
 Exemplo ▼
-
+```
 new dia, mes, ano, hora, minuto, segundo;                                               
 getdate(ano, mes, dia);                                         
 gettime(hora, minuto, segundo);
 
+format(string, sizeof string, "Data: %02d/%02d/%04d as %02d:%02d:%02d", DateAndTime());
+
+SCM(playerid, -1, string);
+```
 Agora se você usar o include desenvolvido por mim você podera abreviar isso, exemplo logo a
 baixo.
 
 Exemplo ▼
-
+```
 format(string, sizeof string, "Data: %s", DateAndTime());                                          
 SCM(playerid, -1, string);
-
+```
 A diferença é grande, é importante que vocês leiam o "Leia.txt" todas as informações e
 explicações do include estão lá.
 
