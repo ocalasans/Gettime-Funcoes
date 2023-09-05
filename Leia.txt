@@ -2,8 +2,9 @@ Olá novamente, bom essa é uma include que abrevia o getdate e o gettime por ca
 você não precisará criar variáveis e nem colocar o gettime ou getdate em algumas coisas
 veja alguns exemplos logo abaixo pra aprender mais sobre a include.
 
-É normal que no seu Gamemode você use o getdate e o gettime como no exemplo abaixo,
-exemplo se você fosse usar ele em um comando, exemplo logo abaixo ▼
+É normal que no seu Gamemode você use o getdate e o gettime como está nos exemplos abaixo.
+
+Exemplo se você fosse usar ele em um comando, exemplo logo abaixo ▼
 
 CMD:data(playerid, params[])
 {
@@ -12,7 +13,8 @@ CMD:data(playerid, params[])
     getdate(ano, mes, dia);
     gettime(hora, minuto, segundo);
     
-    format(string, sizeof string, "Data: %02d/%02d/%04d as %02d:%02d:%02d", dia, mes, ano, hora, minuto, segundo);
+    format(string, sizeof string, "Data: %02d/%02d/%04d as %02d:%02d:%02d", dia, mes, ano, hora, minuto, segundo);
+
     SendClientMessage(playerid, -1, string);
 }
 
@@ -21,7 +23,8 @@ Mas se você usar o meu include você poderia diminuir tudo isso, exemplo logo a
 CMD:data(playerid, params[])
 {
     new string[90];
-    format(string, sizeof string, "%s", DateAndTime());
+    format(string, sizeof string, "%s", DateAndTime());
+
     SendClientMessage(playerid, -1, string);
 }
 
