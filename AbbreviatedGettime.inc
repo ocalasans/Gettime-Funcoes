@@ -6,6 +6,8 @@
         Instagram: ocalasans
 */
 
+#include <a_samp>
+
 new string_time[128];
 
 stock DateAndTime()
