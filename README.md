@@ -5,7 +5,7 @@ precisar usar uma variável pra definir o gettime & getdate, se você usar a var
 vai usar assim, exemplo logo abaixo.
 
 Exemplo ▼
-```php
+```pawn
 new dia, mes, ano, hora, minuto, segundo;                                               
 getdate(ano, mes, dia);                                         
 gettime(hora, minuto, segundo);
@@ -17,7 +17,7 @@ Agora se você usar o include desenvolvido por mim você podera abreviar isso, e
 baixo.
 
 Exemplo ▼
-```php
+```pawn
 format(string, sizeof string, "Data: %s", DateAndTime());                                          
 SCM(playerid, -1, string);
 ```
