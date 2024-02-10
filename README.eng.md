@@ -267,6 +267,6 @@ If you prefer not to define the `Gettime_Function` callback with the previously 
 ### Contact Information
 
 Instagram: [ocalasans](https://instagram.com/ocalasans)   
-YouTube: [Walkerxinho](https://www.youtube.com/@walkerxinho)   
-Discord: walkerxinho7 ou Walkerxinho7#9124   
+YouTube: [Calasans](https://www.youtube.com/@ocalasans)   
+Discord: ocalasans   
 Community: [SA:MP Programming Community©](https://abre.ai/samp-spc)
